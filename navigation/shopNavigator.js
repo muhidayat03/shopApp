@@ -12,7 +12,7 @@ const ProductNavigator = createStackNavigator({
 }, {
     defaultNavigationOptions: {
         headerBackground: () => (
-            <View style={{ flex: 1, backgroundColor: '#FF0066' }} />
+            <View style={{ flex: 1, backgroundColor: Colors.primary }} />
         ),
         headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
     }

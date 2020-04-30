@@ -1,7 +1,8 @@
 import React from 'react'
-import { Text } from 'react-native'
-import { FlatList, ClippingRectangle } from 'react-native'
+import { FlatList } from 'react-native'
 import { useSelector } from 'react-redux'
+import ProductItem from '../../components/shop/ProductItem'
+
 
 const ProductOverviewScreen = props => {
 
@@ -11,7 +12,8 @@ const ProductOverviewScreen = props => {
         <FlatList
             data={products}
             keyExtractor={item => item.id}
-            renderItem={itemData => <Text>{itemData.item.title}</Text>} />
+            renderItem={({ item }) => <ProductItem image={item.imageUrl} title={item.title} price={item.price} />}
+        />
     )
 }
 
