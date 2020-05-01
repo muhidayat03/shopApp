@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
 
     },
     title: {
+        fontFamily: 'open-sans',
         fontSize: 18,
         marginVertical: 4
     },
